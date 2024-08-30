@@ -1,0 +1,19 @@
+{
+  "name": "hashmap-algo",
+  "version": "1.0.0",
+  "description": "implementation of hashmap algorithm",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
+  }
+}
