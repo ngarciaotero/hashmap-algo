@@ -153,6 +153,7 @@ export function linkedList() {
     getTail,
     at,
     pop,
+    shift,
     contains,
     find,
     insertAt,
