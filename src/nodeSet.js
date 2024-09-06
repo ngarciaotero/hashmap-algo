@@ -10,10 +10,6 @@ export function node(initialKey) {
     return next;
   }
 
-  function setKey(newKey) {
-    key = newKey;
-  }
-
   function setNext(nextNode) {
     next = nextNode;
   }
@@ -21,7 +17,6 @@ export function node(initialKey) {
   return {
     getKey,
     getNext,
-    setKey,
     setNext,
   };
 }

@@ -39,11 +39,6 @@ export function linkedList() {
     return head;
   }
 
-  // get last node
-  function getTail() {
-    return tail;
-  }
-
   // get node at given index
   function at(index) {
     if (index >= size || index < 0) return null;
@@ -107,21 +102,6 @@ export function linkedList() {
     return null;
   }
 
-  // add value at given index
-  function insertAt(key, index) {
-    if (index === 0) {
-      prepend(key);
-    } else if (index === getSize()) {
-      append(key);
-    } else {
-      let newNode = node(key);
-      let previousNode = at(index - 1);
-      newNode.setNext(previousNode.getNext());
-      previousNode.setNext(newNode);
-      size++;
-    }
-  }
-
   // remove value at given index
   function removeAt(index) {
     if (index === 0) {
@@ -141,13 +121,11 @@ export function linkedList() {
     prepend,
     getSize,
     getHead,
-    getTail,
     at,
     pop,
     shift,
     contains,
     find,
-    insertAt,
     removeAt,
   };
 }

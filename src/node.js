@@ -15,10 +15,6 @@ export function node(initialKey, initialValue) {
     return next;
   }
 
-  function setKey(newKey) {
-    key = newKey;
-  }
-
   function setValue(newValue) {
     value = newValue;
   }
@@ -31,7 +27,6 @@ export function node(initialKey, initialValue) {
     getKey,
     getValue,
     getNext,
-    setKey,
     setValue,
     setNext,
   };
